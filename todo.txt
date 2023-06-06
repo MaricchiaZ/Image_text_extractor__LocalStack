@@ -1,0 +1,16 @@
+1 - Função Lambda
+2 - Receber uma URL de imagem to terminal
+3 - Extrair o texto da imagem
+4 - Traduzir o texto da imagem
+5 - Criar um arquivo e salvar no Bucket S3 o resultado da operação
+6 - Retornar resultado da tradução para o terminal
+_________ aqui _______________
+7 - Utilizar URL fornecida pelo terminal
+8 - Criar arquivo com o nome dinâmico (pode ser UUID)
+
+FunctionName - image-extract-dev-first_function
+
+chalice-local deploy
+awslocal lambda list-functions
+awslocal lambda invoke --function-name image-extract-dev-first_function teste.txt
+
